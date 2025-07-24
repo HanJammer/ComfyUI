@@ -5,7 +5,6 @@
 #all you have to do is change the base_path to where yours is installed
 a111:
     base_path: path/to/stable-diffusion-webui/
-
     checkpoints: models/Stable-diffusion
     configs: models/Stable-diffusion
     vae: models/VAE
@@ -13,12 +12,14 @@ a111:
          models/Lora
          models/LyCORIS
     upscale_models: |
+                  models/DAT
                   models/ESRGAN
                   models/RealESRGAN
                   models/SwinIR
     embeddings: embeddings
     hypernetworks: models/hypernetworks
     controlnet: models/ControlNet
+    text_encoders: models/text_encoder
 
 #config for comfyui
 #your base path should be either an existing comfy install or a central folder where you store all of your models, loras, etc.
